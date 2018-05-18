@@ -8,11 +8,9 @@ DEPENDENCIES
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
     revision: d1756a0834537e5db483316fcb9aaeea7c06930d
-  elasticsearch
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
     revision: e5ba06587c62a108c642d414cc85d81b11192417
-  java (~> 2)
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 7eeb17a9efcbbd31eff23931453d1b636624548e
