@@ -1,0 +1,20 @@
+{
+  "zookeeper": {
+    "hosts": ["10.226.158.192"],
+    "my_id": 1
+  },
+  "consul": {
+    "hosts": ["10.226.158.250"],
+    "registered_services": [
+      {
+        "name": "zookeeper",
+        "tags": ["zookeeper", "apache"],
+        "address": "",
+        "port": 2181,
+        "checks": []
+      }
+    ],
+    "run_as_server": false
+  },
+  "run_list": ["role[zookeeper]"]
+}
