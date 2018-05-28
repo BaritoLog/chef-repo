@@ -1,10 +1,7 @@
 {
   "zookeeper": {
     "hosts": ["10.226.158.192"],
-    "my_id": 1
-  },
-  "consul": {
-    "hosts": ["10.226.158.250"],
+    "my_id": 1,
     "registered_services": [
       {
         "name": "zookeeper",
@@ -14,6 +11,9 @@
         "checks": []
       }
     ],
+  },
+  "consul": {
+    "hosts": ["10.226.158.250"],
     "run_as_server": false
   },
   "run_list": ["role[zookeeper]"]
