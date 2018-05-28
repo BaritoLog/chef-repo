@@ -6,7 +6,8 @@ DEPENDENCIES
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
-    path: site-cookbooks/consul-cookbook
+    git: https://github.com/BaritoLog/consul-cookbook.git
+    revision: f193b2fc3a6792bb6cbae82bb059a96a5a78329b
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
     revision: 8e777759808926e30c005a3b137ef4489a7322f4
@@ -17,7 +18,8 @@ DEPENDENCIES
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
     revision: f08cab6b3e272f18f4277f55d18934de58684d2d
   zookeeper
-    path: site-cookbooks/zookeeper-cookbook
+    git: https://github.com/BaritoLog/zookeeper-cookbook.git
+    revision: 473033b61d1df0dd9cff9a11abb813dc491db38a
 
 GRAPH
   apt (7.0.0)

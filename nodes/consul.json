@@ -1,6 +1,0 @@
-{
-  "consul": {
-    "hosts": ["10.226.158.250"]
-  },
-  "run_list": ["role[consul]"]
-}
