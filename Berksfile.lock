@@ -1,4 +1,7 @@
 DEPENDENCIES
+  barito-flow
+    git: https://github.com/BaritoLog/barito-flow-cookbook.git
+    revision: 600b0a3b1cd902ae0088b935b3b279ee5718dd7b
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
@@ -27,6 +30,9 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
+  barito-flow (0.1.0)
+    ark (>= 0.0.0)
+    consul (>= 0.0.0)
   build-essential (8.1.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
