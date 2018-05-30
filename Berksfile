@@ -1,7 +1,7 @@
 source "https://api.berkshelf.com"
 source chef_repo: "./site-cookbooks"
 
-cookbook 'base_cookbook', git: 'https://github.com/BaritoLog/base_cookbook.git'
+cookbook 'foundation', git: 'https://github.com/BaritoLog/base_cookbook.git'
 cookbook 'chef_gate', git: 'https://github.com/gate-sso/chef_gate.git'
 cookbook 'consul', git: 'https://github.com/BaritoLog/consul-cookbook.git'
 cookbook 'elasticsearch_wrapper_cookbook', git: 'https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git'

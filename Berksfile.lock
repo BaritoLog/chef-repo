@@ -1,25 +1,25 @@
 DEPENDENCIES
-  base_cookbook
-    git: https://github.com/BaritoLog/base_cookbook.git
-    revision: d3ee57405462edacc8754aedaecf0db6f03ee5d1
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: d1756a0834537e5db483316fcb9aaeea7c06930d
+    revision: b1d32ab2de0c9809fce8897eaae926fd718c7ab8
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: e5ba06587c62a108c642d414cc85d81b11192417
+    revision: c7bf7989aff041ebaec323b870815d5a6f2b8f54
+  foundation
+    git: https://github.com/BaritoLog/base_cookbook.git
+    revision: 0b49ec430c0913c14f4c4c9c2b45cbe4e77b48ec
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: 7eeb17a9efcbbd31eff23931453d1b636624548e
+    revision: 6f171a212ce6b7641cbf0c7b218985c91f6b3d66
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: f08cab6b3e272f18f4277f55d18934de58684d2d
+    revision: 1e1eee74643b3e0316d92c4247e9d330a19e3926
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: 36b75f277c1369102347060db4875741f9c046e1
+    revision: 2804abe25e4a6938672bf516978eac4a498c3485
 
 GRAPH
   apt (7.0.0)
@@ -27,43 +27,39 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  base_cookbook (0.1.0)
-    apt (>= 0.0.0)
-    chef_gate (>= 0.0.0)
-    limits (>= 0.0.0)
-    ntp (>= 0.0.0)
-    ohai (>= 0.0.0)
-    sudo (>= 0.0.0)
   build-essential (8.1.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   chef-sugar (4.0.0)
   chef_gate (0.4.7)
     apt (>= 0.0.0)
-  cluster-search (1.5.0)
   consul (0.1.0)
     ark (>= 0.0.0)
-    cluster-search (>= 0.0.0)
   elasticsearch (4.0.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
     yum (>= 0.0.0)
   elasticsearch_wrapper_cookbook (0.1.0)
-    base_cookbook (>= 0.0.0)
     elasticsearch (>= 0.0.0)
+    foundation (>= 0.0.0)
     java (>= 0.0.0)
+  foundation (0.1.0)
+    apt (>= 0.0.0)
+    limits (>= 0.0.0)
+    ntp (>= 0.0.0)
+    ohai (>= 0.0.0)
+    sudo (>= 0.0.0)
   homebrew (5.0.4)
-  java (2.0.1)
+  java (2.1.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
   kafka (0.1.0)
-    cluster-search (>= 0.0.0)
   kibana5 (1.6.0)
     ark (>= 0.0.0)
     systemd (>= 2.0)
   kibana_wrapper_cookbook (0.1.0)
-    base_cookbook (>= 0.0.0)
+    foundation (>= 0.0.0)
     kibana5 (>= 0.0.0)
     systemd (>= 0.0.0)
   limits (1.0.0)
@@ -75,8 +71,8 @@ GRAPH
     windows (>= 0.0.0)
   sudo (5.4.0)
   systemd (3.2.3)
-  windows (4.2.2)
+  windows (4.2.5)
   yum (5.1.0)
   zookeeper (0.1.0)
     ark (>= 0.0.0)
-    cluster-search (>= 0.0.0)
+    consul (>= 0.0.0)
