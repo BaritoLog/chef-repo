@@ -1,3 +1,3 @@
 name "kafka"
 description "Kafka"
-run_list "recipe[kafka::kafka]"
+run_list "recipe[consul]", "recipe[kafka::kafka]", "recipe[kafka::kafka_consul_register]"

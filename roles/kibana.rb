@@ -1,3 +1,3 @@
 name "kibana"
 description "Kibana"
-run_list "recipe[kibana_wrapper_cookbook]"
+run_list "recipe[consul]", "recipe[kibana_wrapper_cookbook]", "recipe[kibana_wrapper_cookbook::consul_register]"
