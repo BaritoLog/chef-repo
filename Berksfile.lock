@@ -1,28 +1,25 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 600b0a3b1cd902ae0088b935b3b279ee5718dd7b
+    revision: 4b7684bec0fd8d4f49f2512d0bc8f94057fcbc78
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: b1d32ab2de0c9809fce8897eaae926fd718c7ab8
+    revision: 1f411cf32f549b67eec19d043cac86f09cb5f9cd
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: c7bf7989aff041ebaec323b870815d5a6f2b8f54
-  foundation
-    git: https://github.com/BaritoLog/base_cookbook.git
-    revision: 0b49ec430c0913c14f4c4c9c2b45cbe4e77b48ec
+    revision: 63ebb732c35aaeae985a7363d61a80ee80bb6183
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: 6f171a212ce6b7641cbf0c7b218985c91f6b3d66
+    revision: 1f85fae8f3e70876b5c1fd1a79f1b9553f8e4c3d
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 1e1eee74643b3e0316d92c4247e9d330a19e3926
+    revision: 74204e3cfdaa1161de15eca5ff4bb1037a03f35d
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: 2804abe25e4a6938672bf516978eac4a498c3485
+    revision: b6af030b35ec8489807f75d261fb3cf92ebe5b41
 
 GRAPH
   apt (7.0.0)
@@ -41,21 +38,14 @@ GRAPH
     apt (>= 0.0.0)
   consul (0.1.0)
     ark (>= 0.0.0)
-  elasticsearch (4.0.0)
+  elasticsearch (4.0.1)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
     yum (>= 0.0.0)
   elasticsearch_wrapper_cookbook (0.1.0)
     elasticsearch (>= 0.0.0)
-    foundation (>= 0.0.0)
     java (>= 0.0.0)
-  foundation (0.1.0)
-    apt (>= 0.0.0)
-    limits (>= 0.0.0)
-    ntp (>= 0.0.0)
-    ohai (>= 0.0.0)
-    sudo (>= 0.0.0)
   homebrew (5.0.4)
   java (2.1.0)
     homebrew (>= 0.0.0)
@@ -65,17 +55,12 @@ GRAPH
     ark (>= 0.0.0)
     systemd (>= 2.0)
   kibana_wrapper_cookbook (0.1.0)
-    foundation (>= 0.0.0)
     kibana5 (>= 0.0.0)
     systemd (>= 0.0.0)
-  limits (1.0.0)
   mingw (2.0.2)
     seven_zip (>= 0.0.0)
-  ntp (3.5.6)
-  ohai (5.2.2)
   seven_zip (3.0.0)
     windows (>= 0.0.0)
-  sudo (5.4.0)
   systemd (3.2.3)
   windows (4.2.5)
   yum (5.1.0)
