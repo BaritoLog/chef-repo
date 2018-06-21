@@ -1,22 +1,22 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 4b7684bec0fd8d4f49f2512d0bc8f94057fcbc78
+    revision: 2290533e54a1500c04e5c30155338894ba367f1b
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: 1f411cf32f549b67eec19d043cac86f09cb5f9cd
+    revision: d17dcb9392475344c40323f81595d7b7ad29d0c9
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: 63ebb732c35aaeae985a7363d61a80ee80bb6183
+    revision: 4d512713438db1132ef9fc550e66d73fa6c90e38
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 1f85fae8f3e70876b5c1fd1a79f1b9553f8e4c3d
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 74204e3cfdaa1161de15eca5ff4bb1037a03f35d
+    revision: caed89f10e51c8ea8140352a71ee866416a87870
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: b6af030b35ec8489807f75d261fb3cf92ebe5b41
@@ -62,7 +62,7 @@ GRAPH
   seven_zip (3.0.0)
     windows (>= 0.0.0)
   systemd (3.2.3)
-  windows (4.2.5)
+  windows (4.3.2)
   yum (5.1.0)
   zookeeper (0.1.0)
     ark (>= 0.0.0)
