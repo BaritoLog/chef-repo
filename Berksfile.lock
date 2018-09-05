@@ -1,7 +1,7 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 7ab79309d6f9f1644654e63b63aaa49c5137ad3e
+    revision: a592b07d87b37fcac95ba76306e817d28758050b
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
@@ -10,16 +10,16 @@ DEPENDENCIES
     revision: d17dcb9392475344c40323f81595d7b7ad29d0c9
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: fb2d21d48e4f1896a82d00a4e34a1de3caa0b18d
+    revision: dea8bd4b0537f7d169e53df8f9f220b5c15d8987
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: ced33630e9cab4a942a0e4459bd088ceaa8ee52e
+    revision: 35dfb638cd31a5d91c8b79c775f395f48e6de944
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: caed89f10e51c8ea8140352a71ee866416a87870
+    revision: 59b3bbac883a4067e8ffc09d34a89c746bb1f73f
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: b6af030b35ec8489807f75d261fb3cf92ebe5b41
+    revision: 54a8e86a4076c5a2ac3bac543d22b45ef8ff7571
 
 GRAPH
   apt (7.0.0)
@@ -29,10 +29,10 @@ GRAPH
   barito-flow (0.1.0)
     ark (>= 0.0.0)
     consul (>= 0.0.0)
-  build-essential (8.1.1)
+  build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-sugar (4.0.1)
+  chef-sugar (4.1.0)
   chef_gate (0.4.7)
     apt (>= 0.0.0)
   consul (0.1.0)
@@ -45,7 +45,7 @@ GRAPH
   elasticsearch_wrapper_cookbook (0.1.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
-  homebrew (5.0.4)
+  homebrew (5.0.5)
   java (2.2.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
@@ -61,7 +61,7 @@ GRAPH
   seven_zip (3.0.0)
     windows (>= 0.0.0)
   systemd (3.2.3)
-  windows (5.0.0)
+  windows (5.1.0)
   yum (5.1.0)
   zookeeper (0.1.0)
     ark (>= 0.0.0)
