@@ -10,7 +10,7 @@ DEPENDENCIES
     revision: d17dcb9392475344c40323f81595d7b7ad29d0c9
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: dea8bd4b0537f7d169e53df8f9f220b5c15d8987
+    revision: ebd0db94ac3813a6a424fb73e67e020dc60bb99e
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 35dfb638cd31a5d91c8b79c775f395f48e6de944
