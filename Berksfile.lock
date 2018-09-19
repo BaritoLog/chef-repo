@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: 35dfb638cd31a5d91c8b79c775f395f48e6de944
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: d51e9ef345f6551c529a2207844ab12c042cfecc
+    revision: 2128b24fd6bbd7b58e4341d9715d2b8a7af19052
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 54a8e86a4076c5a2ac3bac543d22b45ef8ff7571
