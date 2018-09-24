@@ -8,6 +8,9 @@ DEPENDENCIES
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
     revision: d17dcb9392475344c40323f81595d7b7ad29d0c9
+  datadog
+    git: https://github.com/BaritoLog/datadog-cookbook.git
+    revision: 8f53420dc5a6d25cd5dbd47e393bef094d9ca4c7
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
     revision: 73585b3b56fdf950f222b6f27119c59c83e7960f
@@ -37,7 +40,8 @@ GRAPH
     apt (>= 0.0.0)
   consul (0.1.0)
     ark (>= 0.0.0)
-  elasticsearch (4.0.2)
+  datadog (0.1.0)
+  elasticsearch (4.0.3)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
