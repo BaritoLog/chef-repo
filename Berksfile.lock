@@ -10,7 +10,7 @@ DEPENDENCIES
     revision: d17dcb9392475344c40323f81595d7b7ad29d0c9
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
-    revision: a00373ac90d5c6636a026e55a225dc0b29219092
+    revision: b2b85242252df2a27ab3c5e225ceede9f834c7c6
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
     revision: 73585b3b56fdf950f222b6f27119c59c83e7960f
