@@ -13,7 +13,7 @@ DEPENDENCIES
     revision: f6e51464f5e2d2d735d24c106ba466114470fb58
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: 73585b3b56fdf950f222b6f27119c59c83e7960f
+    revision: 558bc2ec0727a9a7d358bc70fffdafc7a4fbed44
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 35dfb638cd31a5d91c8b79c775f395f48e6de944
@@ -49,12 +49,12 @@ GRAPH
   elasticsearch_wrapper_cookbook (0.1.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
-  homebrew (5.0.5)
-  java (2.2.0)
+  homebrew (5.0.8)
+  java (2.2.1)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
   kafka (0.1.0)
-  kibana5 (1.6.1)
+  kibana5 (1.6.2)
     ark (>= 0.0.0)
     systemd (>= 0.0.0)
   kibana_wrapper_cookbook (0.1.0)
@@ -65,7 +65,7 @@ GRAPH
   seven_zip (3.0.0)
     windows (>= 0.0.0)
   systemd (3.2.3)
-  windows (5.1.1)
+  windows (5.1.2)
   yum (5.1.0)
   zookeeper (0.1.0)
     ark (>= 0.0.0)
