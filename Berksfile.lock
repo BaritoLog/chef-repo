@@ -19,13 +19,13 @@ DEPENDENCIES
     revision: 35dfb638cd31a5d91c8b79c775f395f48e6de944
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 2128b24fd6bbd7b58e4341d9715d2b8a7af19052
+    revision: 87409c5c3c5191da16fd3e96f0a45bc5d7c8d49f
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 54a8e86a4076c5a2ac3bac543d22b45ef8ff7571
 
 GRAPH
-  apt (7.1.0)
+  apt (7.1.1)
   ark (4.0.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
@@ -35,13 +35,13 @@ GRAPH
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-sugar (4.1.0)
+  chef-sugar (4.2.1)
   chef_gate (0.4.7)
     apt (>= 0.0.0)
   consul (0.1.0)
     ark (>= 0.0.0)
   datadog (0.1.0)
-  elasticsearch (4.0.3)
+  elasticsearch (4.0.4)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
@@ -50,7 +50,7 @@ GRAPH
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
   homebrew (5.0.8)
-  java (2.2.1)
+  java (3.1.2)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
   kafka (0.1.0)
@@ -62,10 +62,10 @@ GRAPH
     systemd (>= 0.0.0)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
-  seven_zip (3.0.0)
+  seven_zip (3.1.0)
     windows (>= 0.0.0)
-  systemd (3.2.3)
-  windows (5.1.2)
+  systemd (3.2.4)
+  windows (5.2.2)
   yum (5.1.0)
   zookeeper (0.1.0)
     ark (>= 0.0.0)
