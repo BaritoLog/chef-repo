@@ -80,14 +80,14 @@ GEM
       erubis (~> 2.7.0)
       net-ssh (>= 2.7)
     libyajl2 (1.2.0)
-    minitar (0.7)
+    minitar (0.8)
     mixlib-archive (0.4.19)
       mixlib-log
     mixlib-authentication (2.1.1)
     mixlib-cli (1.7.0)
-    mixlib-config (2.2.13)
+    mixlib-config (2.2.18)
       tomlrb
-    mixlib-log (2.0.4)
+    mixlib-log (2.0.9)
     mixlib-shellout (2.4.4)
     molinillo (0.6.6)
     multi_json (1.13.1)
@@ -117,7 +117,7 @@ GEM
       plist (~> 3.1)
       systemu (~> 2.6.4)
       wmi-lite (~> 1.0)
-    plist (3.4.0)
+    plist (3.5.0)
     proxifier (1.0.3)
     public_suffix (3.0.3)
     rack (2.0.6)
@@ -154,7 +154,7 @@ GEM
     solve (4.0.2)
       molinillo (~> 0.6)
       semverse (>= 1.1, < 4.0)
-    specinfra (2.76.5)
+    specinfra (2.76.9)
       net-scp
       net-ssh (>= 2.7)
       net-telnet (= 0.1.1)
@@ -162,9 +162,9 @@ GEM
     syslog-logger (1.6.8)
     systemu (2.6.5)
     thor (0.20.3)
-    tomlrb (1.2.7)
+    tomlrb (1.2.8)
     uuidtools (2.1.5)
-    wmi-lite (1.0.1)
+    wmi-lite (1.0.2)
 
 PLATFORMS
   ruby
@@ -177,4 +177,4 @@ DEPENDENCIES
   rack (~> 2.0.6)
 
 BUNDLED WITH
-   1.16.2
+   2.0.1
