@@ -9,3 +9,4 @@ cookbook 'elasticsearch_wrapper_cookbook', git: 'https://github.com/BaritoLog/el
 cookbook 'kafka', git: 'https://github.com/BaritoLog/kafka-cookbook.git'
 cookbook 'kibana_wrapper_cookbook', git: 'https://github.com/BaritoLog/kibana_wrapper_cookbook.git'
 cookbook 'zookeeper', git: 'https://github.com/BaritoLog/zookeeper-cookbook.git'
+cookbook 'prometheus', git: 'https://github.com/BaritoLog/prometheus-cookbook.git'
