@@ -25,7 +25,7 @@ DEPENDENCIES
     revision: 1225067c0a019d51482fed84cf151dd944456a35
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: 325ddee51526622981cefd5c5d3d52225d5b1445
+    revision: e5e7db0be445685481b21b4a395448f8591d07fb
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: bc202beca3bc6e3f5fc05a045bafbdeb649ead1e
