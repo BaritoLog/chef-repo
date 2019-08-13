@@ -25,7 +25,7 @@ DEPENDENCIES
     revision: 1225067c0a019d51482fed84cf151dd944456a35
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: 0c26c7d0bd48b4af1aa714ec35207d16e40eda4e
+    revision: 325ddee51526622981cefd5c5d3d52225d5b1445
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: bc202beca3bc6e3f5fc05a045bafbdeb649ead1e
@@ -47,7 +47,6 @@ GRAPH
   chef-sugar (5.0.1)
   chef_gate (0.4.7)
     apt (>= 0.0.0)
-  compat_resource (12.19.1)
   consul (1.1.0)
     ark (>= 0.0.0)
   cron (6.2.1)
@@ -68,11 +67,6 @@ GRAPH
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
     zookeeper (>= 0.0.0)
-  kibana (0.2.3)
-    apt (>= 0.0.0)
-    ark (>= 0.0.0)
-    build-essential (>= 0.0.0)
-    compat_resource (>= 0.0.0)
   kibana5 (1.6.6)
     ark (>= 0.0.0)
     systemd (>= 0.0.0)
@@ -86,7 +80,6 @@ GRAPH
     ark (~> 3.1)
     barito_market (>= 0.0.0)
     cron (~> 6.2.1)
-    kibana (~> 0.2.3)
     logrotate (~> 2.2.0)
   seven_zip (3.1.1)
     windows (>= 0.0.0)
