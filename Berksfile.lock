@@ -1,7 +1,7 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 69c717683a852bba97173175865a0f5c1b3100a6
+    revision: 050087496bd0ee926a50579c20b93468609c1b38
   barito_market
     git: https://github.com/BaritoLog/barito-market-cookbook
     revision: 3193ea2f0e30bece888caaf0c1b9a03b082cece9
@@ -22,10 +22,10 @@ DEPENDENCIES
     revision: 02f6c97a99957a6c7f133d98eccf21edc8baedc1
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: ae5b05419587409bf5c7f5ad01d732572c31ad8c
+    revision: 1225067c0a019d51482fed84cf151dd944456a35
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: 6b5471d20c7f464d5fab6583f0b56c7870223c32
+    revision: 0c26c7d0bd48b4af1aa714ec35207d16e40eda4e
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: bc202beca3bc6e3f5fc05a045bafbdeb649ead1e
@@ -35,14 +35,19 @@ GRAPH
   ark (3.1.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
-  barito-flow (0.8.0)
+  barito-flow (0.12.1)
     ark (>= 0.0.0)
     consul (>= 0.0.0)
   barito_market (0.1.0)
     tar (>= 0.0.0)
     zipfile (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-sugar (5.0.1)
   chef_gate (0.4.7)
     apt (>= 0.0.0)
+  compat_resource (12.19.1)
   consul (1.1.0)
     ark (>= 0.0.0)
   cron (6.2.1)
@@ -55,26 +60,40 @@ GRAPH
   elasticsearch_wrapper_cookbook (6.4.1)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
+  homebrew (5.0.8)
   hostsfile (3.0.1)
+  java (4.3.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
     zookeeper (>= 0.0.0)
+  kibana (0.2.3)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    compat_resource (>= 0.0.0)
   kibana5 (1.6.6)
     ark (>= 0.0.0)
     systemd (>= 0.0.0)
-  kibana_wrapper_cookbook (6.3.0)
+  kibana_wrapper_cookbook (6.3.1)
     kibana5 (>= 0.0.0)
     systemd (>= 0.0.0)
   logrotate (2.2.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
   prometheus (0.1.0)
     ark (~> 3.1)
     barito_market (>= 0.0.0)
     cron (~> 6.2.1)
+    kibana (~> 0.2.3)
     logrotate (~> 2.2.0)
   seven_zip (3.1.1)
     windows (>= 0.0.0)
   systemd (3.2.4)
+  tar (2.2.0)
   windows (6.0.0)
+  yum (5.1.0)
   zipfile (0.2.0)
   zookeeper (3.4.12)
     ark (>= 0.0.0)
