@@ -10,7 +10,7 @@ DEPENDENCIES
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: da641e6f48f20d4c47c044e49158ccd236232b7d
+    revision: 0351d10a6adea5b8dcda1eb9968b466f9f9bbc93
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
     revision: 9d0d8c2cc88a43150428053877b2d4ec10f76785
@@ -44,7 +44,7 @@ GRAPH
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-sugar (5.0.1)
+  chef-sugar (5.0.4)
   chef_gate (0.4.7)
     apt (>= 0.0.0)
   consul (1.1.0)
