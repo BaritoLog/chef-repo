@@ -1,34 +1,37 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 050087496bd0ee926a50579c20b93468609c1b38
+    revision: 496974bbb2024f6ab312ffde45b8dc8b8239d414
+  barito-loki
+    git: https://github.com/BaritoLog/barito-loki-cookbook
+    revision: 179c3fcb409689d88fc2b4d9b83cfb40d0a68c42
   barito_market
     git: https://github.com/BaritoLog/barito-market-cookbook
-    revision: 3193ea2f0e30bece888caaf0c1b9a03b082cece9
+    revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: 0351d10a6adea5b8dcda1eb9968b466f9f9bbc93
+    revision: f825bdaa31322c82b5709c4156df82206e9c6898
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
-    revision: 9d0d8c2cc88a43150428053877b2d4ec10f76785
+    revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: 40c4ab3d70f8e793b943a961e4392f3f88e7b5c3
+    revision: 0e5d15a297268dc341acd211b6d42033ed329406
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: 001241c4635e09ac1bf6ec4247130e47a19806f4
+    revision: 608d7242ad626f6044d60d445f8bcc816b1983db
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: ca704ac4b2dff8ea19df6f1a29eed0bc3ca1ef07
+    revision: a8a40110ec48c77b4bda423302ee09dafbcac65e
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: b654f7a707ee5d03ff623dac9fe1f5cc45c22718
+    revision: a9331b60176a82149fea69215081b1e0af2dd8a7
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: fd3bc3aff509b9b96ca14c8c3f6b504c93da047d
+    revision: f86a06c353f170f53b1d2eca5577356646c42b97
 
 GRAPH
   apt (7.2.0)
@@ -38,7 +41,9 @@ GRAPH
   barito-flow (0.12.1)
     ark (>= 0.0.0)
     consul (>= 0.0.0)
-  barito_market (0.1.0)
+  barito-loki (0.1.0)
+    consul (>= 0.0.0)
+  barito_market (0.2.0)
     tar (>= 0.0.0)
     zipfile (>= 0.0.0)
   build-essential (8.2.1)
@@ -49,7 +54,7 @@ GRAPH
     apt (>= 0.0.0)
   consul (1.1.0)
     ark (>= 0.0.0)
-  cron (6.2.1)
+  cron (6.2.2)
   datadog (0.1.0)
   elasticsearch (4.2.0)
     apt (>= 0.0.0)
@@ -74,18 +79,18 @@ GRAPH
   kibana_wrapper_cookbook (6.3.1)
     kibana5 (>= 0.0.0)
     systemd (>= 0.0.0)
-  logrotate (2.2.0)
+  logrotate (2.2.2)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
   prometheus (0.1.1)
     ark (~> 3.1)
     cron (~> 6.2.1)
     logrotate (~> 2.2.0)
-  seven_zip (3.1.1)
+  seven_zip (3.1.2)
     windows (>= 0.0.0)
   systemd (3.2.4)
   tar (2.2.0)
-  windows (6.0.0)
+  windows (6.0.1)
   yum (5.1.0)
   zipfile (0.2.0)
   zookeeper (3.4.12)

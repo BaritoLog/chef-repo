@@ -11,3 +11,4 @@ cookbook 'kibana_wrapper_cookbook', git: 'https://github.com/BaritoLog/kibana_wr
 cookbook 'zookeeper', git: 'https://github.com/BaritoLog/zookeeper-cookbook.git'
 cookbook 'prometheus', git: 'https://github.com/BaritoLog/prometheus-cookbook.git'
 cookbook 'barito_market', git: 'https://github.com/BaritoLog/barito-market-cookbook'
+cookbook 'barito-loki', git: 'https://github.com/BaritoLog/barito-loki-cookbook'
