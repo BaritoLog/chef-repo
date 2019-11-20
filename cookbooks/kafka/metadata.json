@@ -1,0 +1,39 @@
+{
+  "name": "kafka",
+  "description": "Installs/Configures kafka cluster",
+  "long_description": "Installs/Configures kafka cluster",
+  "maintainer": "BaritoLog",
+  "maintainer_email": "you@example.com",
+  "license": "MIT",
+  "platforms": {
+
+  },
+  "dependencies": {
+    "hostsfile": ">= 0.0.0",
+    "zookeeper": ">= 0.0.0"
+  },
+  "providing": {
+
+  },
+  "attributes": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "2.11.0",
+  "source_url": "https://github.com/BaritoLog/kafka-cookbook",
+  "issues_url": "https://github.com/BaritoLog/kafka-cookbook/issues",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 12.14"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

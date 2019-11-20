@@ -1,0 +1,17 @@
+init_config:
+
+instances:
+  <% @instances.each do |instance| %>
+  - burrow_uri: <%= instance['uri'] %>
+    clusters:
+      <% instance['cluster_names'].each do |cluster_name| %>
+      - <%= cluster_name %>
+      <% end %>
+    tags:
+      <% instance['cluster_names'].each do |cluster_name| %>
+      - burrow:<%= cluster_name %>
+      <% end %>
+      <% instance['tags'].each do |tag| %>
+      - <%= tag %>
+      <% end %>
+  <% end %>

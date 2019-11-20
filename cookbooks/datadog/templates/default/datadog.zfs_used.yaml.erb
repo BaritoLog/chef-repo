@@ -1,0 +1,6 @@
+init_config:
+
+instances:
+  <% @instances.each do |instance| %>
+  - storage_pool: <%= instance['storage_pool'] %>
+  <% end %>

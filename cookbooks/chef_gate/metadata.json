@@ -1,0 +1,36 @@
+{
+  "name": "chef_gate",
+  "description": "Installs/Configures gate-sso",
+  "long_description": "# Chef cookbook for Gate SSO\n\nThis cookbook does following\n\n* Installs gate_ssh.sh for enabling public key lookup through AuthorizedKeysCommand and AuthorizedKeysCommandUser parameters in sshd_config\n* Install nss_http for looking up user, group and shadow through gate-sso server\n",
+  "maintainer": "YOUR_COMPANY_NAME",
+  "maintainer_email": "YOUR_EMAIL",
+  "license": "All rights reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+    "apt": ">= 0.0.0"
+  },
+  "providing": {
+
+  },
+  "attributes": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.4.7",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}
