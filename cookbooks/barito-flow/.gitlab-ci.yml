@@ -1,0 +1,59 @@
+stages:
+  - validate
+  - build-base
+
+variables:
+  BUILD_VERSION: "$CI_COMMIT_TAG"
+  BUILD_COMMIT_SHA: "$CI_COMMIT_SHA"
+  IMAGE_REGISTRY: "barito-registry"
+  COOKBOOK_PATHS: "./cookbooks"
+  BUILDERS_IMAGE: "ubuntu-minimal:18.04"
+
+before_script:
+    - curl -s https://raw.githubusercontent.com/BaritoLog/cx-scripts/master/gitlabci-install-packer.sh | bash
+
+validate-barito-flow-producer:
+  stage: validate
+  variables:
+    OUTPUT_IMAGE: "lxd-ubuntu-minimal-barito-flow-producer-$CI_COMMIT_TAG"
+  script:
+    - ./packer/packer validate ./packer-barito-flow-producer.json
+  tags:
+    - bionic
+
+validate-barito-flow-consumer:
+  stage: validate
+  variables:
+    OUTPUT_IMAGE: "lxd-ubuntu-minimal--barito-flow-consumer-$CI_COMMIT_TAG"
+  script:
+    - ./packer/packer validate ./packer-barito-flow-consumer.json
+  tags:
+    - bionic
+
+build-base-barito-flow-producer:
+  stage: build-base
+  variables:
+    OUTPUT_IMAGE: "lxd-ubuntu-minimal-barito-flow-producer-$CI_COMMIT_TAG"
+  script:
+    - curl -s https://raw.githubusercontent.com/BaritoLog/cx-scripts/master/gitlabci-build-base.sh | bash -s ./packer-barito-flow-producer.json
+    - curl -s https://raw.githubusercontent.com/BaritoLog/cx-scripts/master/gitlabci-copy-image.sh | bash
+  tags:
+    - bionic
+    - lxd
+    - lxc
+  only:
+  - tags
+
+build-base-barito-flow-consumer:
+  stage: build-base
+  variables:
+    OUTPUT_IMAGE: "lxd-ubuntu-minimal-barito-flow-consumer-$CI_COMMIT_TAG"
+  script:
+    - curl -s https://raw.githubusercontent.com/BaritoLog/cx-scripts/master/gitlabci-build-base.sh | bash -s ./packer-barito-flow-consumer.json
+    - curl -s https://raw.githubusercontent.com/BaritoLog/cx-scripts/master/gitlabci-copy-image.sh | bash
+  tags:
+    - bionic
+    - lxd
+    - lxc
+  only:
+  - tags

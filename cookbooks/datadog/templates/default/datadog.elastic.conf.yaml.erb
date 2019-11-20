@@ -1,0 +1,10 @@
+init_config:
+
+instances:
+  <% @instances.each do |instance| %>
+  - url: <%= instance['url'] %>
+    tags:
+      <% instance['tags'].each do |tag| %>
+      - <%= tag %>
+      <% end %>
+  <% end %>

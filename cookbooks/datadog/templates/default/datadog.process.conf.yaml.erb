@@ -1,0 +1,12 @@
+init_config:
+
+instances:
+  <% @instances.each do |instance| %>
+  - name: <%= instance['name'] %>
+    search_string: ['<%= instance['search_string'] %>']
+    tags:
+      <% instance['tags'].each do |tag| %>
+      - <%= tag %>
+      <% end %>
+    ignore_denied_access: True
+  <% end %>

@@ -1,0 +1,14 @@
+[Unit]
+Description=Burrow
+StartLimitIntervalSec=50
+StartLimitBurst=3
+After=network.target
+
+[Service]
+SyslogIdentifier=burrow
+Restart=on-failure
+RestartSec=10
+ExecStart=<%=@init_command%>
+
+[Install]
+WantedBy=multi-user.target

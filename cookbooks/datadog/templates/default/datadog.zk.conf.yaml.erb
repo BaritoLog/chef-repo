@@ -1,0 +1,12 @@
+init_config:
+
+instances:
+  <% @instances.each do |instance| %>
+  - host: <%= instance['host'] %>
+    port: <%= instance['port'] %>
+    tags:
+      - cluster:<%= instance['cluster_name'] %>
+      <% instance['tags'].each do |tag| %>
+      - <%= tag %>
+      <% end %>
+  <% end %>

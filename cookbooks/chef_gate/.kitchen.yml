@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu/trusty64
+
+suites:
+  - name: pam
+    run_list:
+      - recipe[test-helper]
+      - recipe[gate_test::pam]
+    attributes:
+  - name: ssh
+    run_list:
+      - recipe[test-helper]
+      - recipe[gate_test::ssh]
+    attributes:

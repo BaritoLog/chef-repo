@@ -1,0 +1,48 @@
+{
+  "variables": {
+    "build_version": "{{env `BUILD_VERSION`}}",
+    "build_commit_sha": "{{env `BUILD_COMMIT_SHA`}}",
+    "output_image": "{{env `OUTPUT_IMAGE`}}",
+    "cookbook_paths": "{{env `COOKBOOK_PATHS`}}",
+    "builders_image": "{{env `BUILDERS_IMAGE`}}"
+  },
+  "builders": [
+    {
+      "type": "lxd",
+      "image": "{{user `builders_image`}}",
+      "output_image": "{{user `output_image`}}",
+      "publish_properties": {
+        "version": "{{user `build_version`}}",
+        "commit_sha": "{{user `build_commit_sha`}}",
+        "description": "LXD image for barito flow consumer"
+      },
+      "init_sleep": "5"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "chef-solo",
+      "cookbook_paths": ["{{user `cookbook_paths`}}"],
+      "run_list": ["recipe[barito-flow::consumer]"],
+      "chef_license": "accept",
+      "json":{
+        "barito-flow": {
+          "consumer": {
+            "version": "v0.13.1",
+            "env_vars": {
+              "BARITO_CONSUL_URL": "consul.service.consul:8500",
+              "BARITO_KAFKA_BROKERS": "kafka.service.consul:9092",
+              "BARITO_KAFKA_GROUP_ID": "barito-group",
+              "BARITO_PUSH_METRIC_URL": "https://barito.golabs.io//api/increase_log_count",
+              "BARITO_CONSUL_KAFKA_NAME": "kafka",
+              "BARITO_ELASTICSEARCH_URLS": "http://elasticsearch.service.consul:9200",
+              "BARITO_KAFKA_TOPIC_SUFFIX": "_pb",
+              "BARITO_KAFKA_CONSUMER_TOPICS": "barito-log",
+              "BARITO_CONSUL_ELASTICSEARCH_NAME": "elasticsearch"
+            }
+          }
+        }  
+      }
+    }
+  ]
+}
