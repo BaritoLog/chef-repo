@@ -10,7 +10,7 @@ DEPENDENCIES
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: 09496e82f7213201a1ac55bdbff83880efeca123
+    revision: 93a8b0a3da956c0330e8cc8d4355d9291bb1d0dd
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
@@ -22,7 +22,7 @@ DEPENDENCIES
     revision: e3a80f2f56024f96a6154b3e7aa9fe14d5dd88b4
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 5b01c3ceb144e9a81f3aecb095f97ae4e7f8b2cf
+    revision: d6fbef133732e6d4c437da769d39557ab0a57b09
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
