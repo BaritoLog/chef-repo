@@ -58,16 +58,16 @@ default[cookbook_name]['producer']['log_file_name'] = 'error.log'
 default[cookbook_name]['producer']['systemd_unit'] = {
   'Unit' => {
     'Description' => 'barito producer',
-    'After' => 'network.target'
+    'After' => 'network.target',
+    'StartLimitInterval' => 200,
+    'StartLimitBurst' => 6
   },
   'Service' => {
     'Type' => 'simple',
     'User' => node[cookbook_name]['user'],
     'Group' => node[cookbook_name]['group'],
     'Restart' => 'on-failure',
-    'RestartSec' => 2,
-    'StartLimitInterval' => 50,
-    'StartLimitBurst' => 10,
+    'RestartSec' => 5,
     'ExecStart' => 'TO_BE_COMPLETED'
   },
   'Install' => {

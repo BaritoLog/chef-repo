@@ -12,6 +12,7 @@ default['kibana']['config']['server.basePath'] = '/test'
 default['kibana']['config']['port'] = '5601'
 default['kibana']['config']['xpack.security.enabled'] = false
 default['kibana']['config']['prometheus_url'] = 'http://localhost'
+default['kibana']['config']['message_format'] = 'Warning: TPS exceeded on these apps: %s. Please ask app group owner to increase TPS.'
 override['kibana']['config']['base_dir'] = '/opt/kibana'
 override['kibana']['config']['logging.dest'] = '/var/log/kibana.log'
 

@@ -1,7 +1,7 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 496974bbb2024f6ab312ffde45b8dc8b8239d414
+    revision: 5f22a0644723aad995ebf51ff914a93b10173669
   barito_market
     git: https://github.com/BaritoLog/barito-market-cookbook
     revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
@@ -19,10 +19,10 @@ DEPENDENCIES
     revision: 7f4b90ceb444dd5f9abe0b13dae93ab2cdbd43a0
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: e3a80f2f56024f96a6154b3e7aa9fe14d5dd88b4
+    revision: b46fac4a0207667ee7504bb13e48f6a775e69aa2
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: d6fbef133732e6d4c437da769d39557ab0a57b09
+    revision: be74089f10dfed1f6ec262784b858dc31fad3690
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
