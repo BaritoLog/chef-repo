@@ -28,7 +28,7 @@
       "json":{
         "barito-flow": {
           "producer": {
-            "version": "v0.13.1",
+            "version": "v0.13.2",
             "env_vars": {
               "BARITO_CONSUL_URL": "consul.service.consul:8500",
               "BARITO_KAFKA_BROKERS": "kafka.service.consul:9092",
