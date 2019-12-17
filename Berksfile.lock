@@ -1,7 +1,7 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 9f4e5ecdd4bf478d58c183db1176789a1187f5d3
+    revision: 5da0937cccbf84b4de550e41a780f1f0163aec6d
   barito_market
     git: https://github.com/BaritoLog/barito-market-cookbook
     revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
@@ -19,7 +19,7 @@ DEPENDENCIES
     revision: eea4a492e2db45727bd0bd643c67dcd67ac61497
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: b46fac4a0207667ee7504bb13e48f6a775e69aa2
+    revision: e6df63c04aa37888a98843cb6ceca0b06265afdf
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
     revision: 99e587b9c780398fedfc3c4ee758baa262e358bd
@@ -28,7 +28,7 @@ DEPENDENCIES
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: 08ab23db8378878c29dad185a19246984612105e
+    revision: 0e57dbdd6e9a81e120102d1dfb13129be0bcce5b
 
 GRAPH
   apt (7.2.0)
