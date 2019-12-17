@@ -22,7 +22,7 @@ DEPENDENCIES
     revision: e6df63c04aa37888a98843cb6ceca0b06265afdf
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 99e587b9c780398fedfc3c4ee758baa262e358bd
+    revision: 24d4ec880245285b0fbbdaf253c0bbeceda09699
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
