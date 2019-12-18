@@ -16,13 +16,13 @@ DEPENDENCIES
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: eea4a492e2db45727bd0bd643c67dcd67ac61497
+    revision: 83a0557f3849193b923f9c1b21e919a83543c064
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: e58a4e5f1cdc54d8006b54a8f342bd8a6cac518d
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 24d4ec880245285b0fbbdaf253c0bbeceda09699
+    revision: 28c8924073a0203b02301dd205c3e5982dfbbe2a
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
