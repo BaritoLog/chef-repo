@@ -28,7 +28,7 @@ DEPENDENCIES
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: 0e57dbdd6e9a81e120102d1dfb13129be0bcce5b
+    revision: 0099c2c3e8c212171bfaef9edf92ef188adbf5ce
 
 GRAPH
   apt (7.2.0)
