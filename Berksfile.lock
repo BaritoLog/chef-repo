@@ -10,25 +10,25 @@ DEPENDENCIES
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: 93a8b0a3da956c0330e8cc8d4355d9291bb1d0dd
+    revision: 80f6d3db60262e50d03d00b6efad31714f2d190b
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: 83a0557f3849193b923f9c1b21e919a83543c064
+    revision: aaff2ff93083c51a22b2457886f4ed400de580af
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: e58a4e5f1cdc54d8006b54a8f342bd8a6cac518d
+    revision: 345b30e0b51c27f7cbc1fcc23f4150abb5fe1f37
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 28c8924073a0203b02301dd205c3e5982dfbbe2a
+    revision: 15e52710ff1d61d0cec11a7feaa468486eb5fae1
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
     revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
-    revision: 08c6c57480ac7182fe52bab688f13d550454f059
+    revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
 
 GRAPH
   apt (7.2.0)
@@ -51,7 +51,7 @@ GRAPH
     ark (>= 0.0.0)
   cron (6.2.2)
   datadog (0.1.0)
-  elasticsearch (4.2.0)
+  elasticsearch (4.3.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)

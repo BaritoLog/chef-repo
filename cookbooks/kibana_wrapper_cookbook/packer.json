@@ -30,6 +30,9 @@
       "json": {
         "kibana": {
           "version": "6.4.3"
+        },
+        "kibana_exporter": {
+          "kibana_version": "6.4.3"
         }
       }
     }
