@@ -1,7 +1,7 @@
 DEPENDENCIES
   barito-flow
     git: https://github.com/BaritoLog/barito-flow-cookbook.git
-    revision: 5da0937cccbf84b4de550e41a780f1f0163aec6d
+    revision: e89d8bebcb9f018a866ad9b867534095cd0354ec
   barito_market
     git: https://github.com/BaritoLog/barito-market-cookbook
     revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
@@ -16,16 +16,16 @@ DEPENDENCIES
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: aaff2ff93083c51a22b2457886f4ed400de580af
+    revision: 95956374fdc2f24ca1f4f918a0fa3d38851cf804
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: 6d59ed745698f719cdc4a9bfa2413c51113d16d7
+    revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
-    revision: 15e52710ff1d61d0cec11a7feaa468486eb5fae1
+    revision: 14bf1566594a7ce95247b8e76e5ca8fb41c003bf
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: 46d8777983f3a0e3d65fe16b315a0c907e9bc085
+    revision: d9f70b80c5dc1c0ae2d233669772c3a2ba9b82b1
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
@@ -60,11 +60,8 @@ GRAPH
     ark (>= 0.0.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
-  homebrew (5.0.8)
   hostsfile (3.0.1)
-  java (4.3.0)
-    homebrew (>= 0.0.0)
-    windows (>= 0.0.0)
+  java (8.0.1)
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
     zookeeper (>= 0.0.0)
@@ -77,7 +74,7 @@ GRAPH
   logrotate (2.2.2)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
-  prometheus (0.1.1)
+  prometheus (0.1.5)
     ark (~> 3.1)
     cron (~> 6.2.1)
     logrotate (~> 2.2.0)
@@ -85,7 +82,7 @@ GRAPH
     windows (>= 0.0.0)
   systemd (3.2.4)
   tar (2.2.0)
-  windows (6.0.1)
+  windows (7.0.0)
   yum (5.1.0)
   zipfile (0.2.0)
   zookeeper (3.4.12)

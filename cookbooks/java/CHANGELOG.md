@@ -2,7 +2,61 @@
 
 This file is used to list changes made in each version of the Java cookbook.
 
-## Unreleased
+## 8.0.1 (30-03-2020)
+
+- Added documentation in documentation/resources for `adoptopenjdk_install`, `alternatives`, `certificate`, `corretto_install`, `jce`, `openjdk_install`
+
+## 8.0.0 (30-03-2020)
+
+- Added `openjdk_install` resource & documentation
+- Removed openjdk, corretto, default_java_symlink, ibm & ibm_tar, notify & oracle recipes
+- Removed support for IBM and Oracle Java
+- Temporarily removed sypport for Windows
+- Split out helpers for each provider into their own namespace and file
+
+## 7.0.0 (2020-03-05)
+
+- Refactored and sped up unit tests.
+
+## Added
+
+- Added `adoptopenjdk_install` resource & documentation
+- Added AdoptOpenJDK 13 testing
+
+## Deprecated
+
+- Removed the adoptopenjdk recipe, please use the `adoptopenjdk_install` resource instead.
+- Increased the minimum Chef requirement to Chef 15 to use the archive resource.
+- Removed AdoptOpenJDK 10 testing
+
+## 6.0.0 (2020-03-02)
+
+## Deprecated
+
+- The resource alias `java_ark` has been deprecated in favour of `java_oracle_install`
+
+## 5.0.0 (2020-02-21)
+
+### Added
+
+### Changed
+
+- Fixed java_certificate regex where it checks if cert exists in cacert file.
+- Make Homebrew Cask name an attribute to allow for other options (ex: adoptopenjdk)
+- Switch homebrew tap to homebrew/cask-versions
+- Make builds parallel
+- Updates package name and link changes for adoptopenjdk
+- Migrated testing to github actions
+
+### Deprecated
+
+### Removed
+
+- Removes openjdk-6
+- Removes openjdk-7 for Ubuntu 16.04
+- Removes openjdk-11 for Ubuntu
+- Removes openjdk-direct for Debian 8
+- Removes oracle variants from test configurations
 
 ## 4.3.0 (2019-08-04)
 

@@ -28,7 +28,7 @@
       "json":{
         "barito-flow": {
           "consumer": {
-            "version": "v0.13.2",
+            "version": "v0.13.3",
             "env_vars": {
               "BARITO_CONSUL_URL": "consul.service.consul:8500",
               "BARITO_KAFKA_BROKERS": "kafka.service.consul:9092",
@@ -38,7 +38,9 @@
               "BARITO_ELASTICSEARCH_URLS": "http://elasticsearch.service.consul:9200",
               "BARITO_KAFKA_TOPIC_SUFFIX": "_pb",
               "BARITO_KAFKA_CONSUMER_TOPICS": "barito-log",
-              "BARITO_CONSUL_ELASTICSEARCH_NAME": "elasticsearch"
+              "BARITO_CONSUL_ELASTICSEARCH_NAME": "elasticsearch",
+              "ELASTIC_USERNAME": "",
+              "ELASTIC_PASSWORD": ""
             }
           }
         }  

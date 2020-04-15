@@ -18,20 +18,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-property :java_home, String, default: lazy { node['java']['java_home'] }
-property :keystore_path, String, default: lazy { node['java']['jdk_version'].to_i < 11 ? "#{node['java']['java_home']}/jre/lib/security/cacerts" : "#{node['java']['java_home']}/lib/security/cacerts" }
-property :keystore_passwd, String, default: 'changeit'
-property :cert_alias, String, name_property: true
-property :cert_data, String
-property :cert_file, String
-property :ssl_endpoint, String
+property :java_home, String, default: lazy { node['java']['java_home'] }, description: 'The java home directory'
+property :java_version, String, default: lazy { node['java']['jdk_version'] }, description: ' The java version'
+property :keystore_path, String, description: 'Path to the keystore'
+property :keystore_passwd, String, default: 'changeit', description: 'Password to the keystore'
+property :cert_alias, String, name_property: true, description: 'The alias of the certificate in the keystore. This defaults to the name of the resource'
+property :cert_data, String, description: 'The certificate data to install'
+property :cert_file, String, description: 'Path to a certificate file to install'
+property :ssl_endpoint, String, description: 'An SSL end-point from which to download the certificate'
 
 action :install do
   require 'openssl'
 
   java_home = new_resource.java_home
+  Chef::Log.info java_home
   keytool = "#{java_home}/bin/keytool"
-  truststore = if new_resource.keystore_path.empty?
+  truststore = if new_resource.keystore_path.nil?
                  truststore_default_location
                else
                  new_resource.keystore_path
@@ -41,7 +43,7 @@ action :install do
   certdata = new_resource.cert_data || fetch_certdata
 
   hash = OpenSSL::Digest::SHA512.hexdigest(certdata)
-  certfile = "#{node['java']['download_path']}/#{certalias}.cert.#{hash}"
+  certfile = "#{Chef::Config[:file_cache_path]}/#{certalias}.cert.#{hash}"
   cmd = Mixlib::ShellOut.new("#{keytool} -list -keystore #{truststore} -storepass #{truststore_passwd} -rfc -alias \"#{certalias}\"")
   cmd.run_command
   keystore_cert = cmd.stdout.match(/^[-]+BEGIN.*END(\s|\w)+[-]+$/m).to_s
@@ -53,10 +55,10 @@ action :install do
   else
     cmd = Mixlib::ShellOut.new("#{keytool} -list -keystore #{truststore} -storepass #{truststore_passwd} -v")
     cmd.run_command
-    Chef::Log.debug(cmd.format_for_exception)
+    Chef::Log.info(cmd.format_for_exception)
     Chef::Application.fatal!("Error querying keystore for existing certificate: #{cmd.exitstatus}", cmd.exitstatus) unless cmd.exitstatus == 0
 
-    has_key = !cmd.stdout[/Alias name: \b#{certalias}/i].nil?
+    has_key = !cmd.stdout[/Alias name: \b#{certalias}\s*$/i].nil?
 
     if has_key
       converge_by("delete existing certificate #{certalias} from #{truststore}") do
@@ -93,7 +95,7 @@ action :remove do
                  new_resource.keystore_path
                end
   truststore_passwd = new_resource.keystore_passwd
-  keytool = "#{node['java']['java_home']}/bin/keytool"
+  keytool = "#{new_resource.java_home}/bin/keytool"
 
   cmd = Mixlib::ShellOut.new("#{keytool} -list -keystore #{truststore} -storepass #{truststore_passwd} -v | grep \"#{certalias}\"")
   cmd.run_command
@@ -111,7 +113,7 @@ action :remove do
     end
   end
 
-  FileUtils.rm_f("#{node['java']['download_path']}/#{certalias}.cert.*")
+  FileUtils.rm_f("#{new_reource.download_path}/#{certalias}.cert.*")
 end
 
 action_class do
@@ -135,10 +137,10 @@ action_class do
   end
 
   def truststore_default_location
-    if node['java']['jdk_version'].to_i > 8
-      "#{node['java']['java_home']}/lib/security/cacerts"
+    if new_resource.java_version.to_i > 8
+      "#{new_resource.java_home}/lib/security/cacerts"
     else
-      "#{node['java']['java_home']}/jre/lib/security/cacerts"
+      "#{new_resource.java_home}/jre/lib/security/cacerts"
     end
   end
 end
