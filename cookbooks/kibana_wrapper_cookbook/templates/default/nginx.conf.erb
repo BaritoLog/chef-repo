@@ -16,7 +16,7 @@ server {
     proxy_read_timeout 100ms;
   }
 
-  location = /<%= @base_path %>/_barito.js {
+  location = <%= @base_path %>/_barito.js {
     content_by_lua_block {
       local cjson = require "cjson"
 
@@ -73,7 +73,7 @@ server {
   }
 
   location ~ ^<%= @base_path %>/?(.*)$ {
-    sub_filter '</body>' '<script src="/<%= @base_path %>/_barito.js"></script></body>';
+    sub_filter '</body>' '<script src="<%= @base_path %>/_barito.js"></script></body>';
     sub_filter_once on;
 
     rewrite ^<%= @base_path %>/?(.*)$ /$1 break;
