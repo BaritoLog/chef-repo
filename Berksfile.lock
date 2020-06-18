@@ -20,6 +20,9 @@ DEPENDENCIES
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
+  kibana
+    git: https://github.com/BaritoLog/kibana_cookbook.git
+    revision: 2ee542ef0d35f19c8b6955f8e4357ce6671a5a19
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
@@ -31,7 +34,7 @@ DEPENDENCIES
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
 
 GRAPH
-  apt (7.2.0)
+  apt (7.3.0)
   ark (3.1.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
@@ -61,19 +64,27 @@ GRAPH
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
   hostsfile (3.0.1)
-  java (8.0.1)
+  java (8.3.0)
+    line (>= 0.0.0)
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
     zookeeper (>= 0.0.0)
+  kibana (7.3.0)
+    ark (>= 0.0.0)
+    nodejs (>= 0.0.0)
+    systemd (>= 0.0.0)
   kibana5 (1.6.7)
     ark (>= 0.0.0)
     systemd (>= 0.0.0)
   kibana_wrapper_cookbook (6.3.1)
     kibana5 (>= 0.0.0)
     systemd (>= 0.0.0)
-  logrotate (2.2.2)
-  mingw (2.1.0)
+  line (2.9.0)
+  logrotate (2.2.3)
+  mingw (2.1.1)
     seven_zip (>= 0.0.0)
+  nodejs (7.0.1)
+    ark (>= 2.0.2)
   prometheus (0.1.5)
     ark (~> 3.1)
     cron (~> 6.2.1)

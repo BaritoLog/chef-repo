@@ -6,7 +6,7 @@
 [![OpenCollective](https://opencollective.com/sous-chefs/sponsors/badge.svg)](#sponsors)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This cookbook installs a Java JDK/JRE. It defaults to installing OpenJDK, but it can also install Oracle, IBM JDKs or AdoptOpenJDK.
+This cookbook installs a Java JDK/JRE. It defaults to installing OpenJDK, but it can also install AdoptOpenJDK.
 
 ## Maintainers
 
@@ -26,11 +26,14 @@ Chef 15+
 ## Resources
 
 - [adoptopenjdk_install](https://github.com/sous-chefs/java/blob/master/documentation/resources/adoptopenjdk_install.md)
+- [adoptopenjdk_linux_install](https://github.com/sous-chefs/java/blob/master/documentation/resources/adoptopenjdk_linux_install.md)
+- [adoptopenjdk_macos_install](https://github.com/sous-chefs/java/blob/master/documentation/resources/adoptopenjdk_macos_install.md)
 - [alternatives](https://github.com/sous-chefs/java/blob/master/documentation/resources/alternatives.md)
 - [certificate](https://github.com/sous-chefs/java/blob/master/documentation/resources/certificate.md)
 - [corretto_install](https://github.com/sous-chefs/java/blob/master/documentation/resources/corretto_install.md)
 - [jce](https://github.com/sous-chefs/java/blob/master/documentation/resources/jce.md)
 - [openjdk_install](https://github.com/sous-chefs/java/blob/master/documentation/resources/openjdk_install.md)
+- [openjdk_pkg_install](https://github.com/sous-chefs/java/blob/master/documentation/resources/openjdk_pkg_install.md)
 
 ## Contributors
 
