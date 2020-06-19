@@ -22,7 +22,7 @@ DEPENDENCIES
     revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
   kibana
     git: https://github.com/BaritoLog/kibana_cookbook.git
-    revision: 55eb6789ae686f6b9df3ed0000f4bb6e343120f8
+    revision: d06ec4759c2af6a24dc9b27eb1a784ef524ac601
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
