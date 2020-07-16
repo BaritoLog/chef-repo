@@ -10,25 +10,25 @@ DEPENDENCIES
     revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: 80f6d3db60262e50d03d00b6efad31714f2d190b
+    revision: aea46fd0a652411e3a1f61daf244c521156dee7b
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: 95956374fdc2f24ca1f4f918a0fa3d38851cf804
+    revision: e18900bb7e3d67162211bc0332899ccdb7e71edf
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
   kibana
     git: https://github.com/BaritoLog/kibana_cookbook.git
-    revision: d06ec4759c2af6a24dc9b27eb1a784ef524ac601
+    revision: 83c9a557327f82518f6e6560e41bf91dd9ff60b5
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: d9f70b80c5dc1c0ae2d233669772c3a2ba9b82b1
+    revision: af589e6979e9aff1edc72beea4c0ff0ac4da2652
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
