@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: e18900bb7e3d67162211bc0332899ccdb7e71edf
+    revision: 6031a177c6e8f6864202c95dcec08c966a9a35d6
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
@@ -28,7 +28,7 @@ DEPENDENCIES
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: af589e6979e9aff1edc72beea4c0ff0ac4da2652
+    revision: ac7f4c3e9148c18475720943a5f83d9c5bf30881
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
@@ -59,7 +59,7 @@ GRAPH
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
     yum (>= 0.0.0)
-  elasticsearch_wrapper_cookbook (7.3.0)
+  elasticsearch_wrapper_cookbook (7.5.2)
     ark (>= 0.0.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
@@ -85,7 +85,7 @@ GRAPH
     seven_zip (>= 0.0.0)
   nodejs (7.0.1)
     ark (>= 2.0.2)
-  prometheus (0.1.5)
+  prometheus (0.1.8)
     ark (~> 3.1)
     cron (~> 6.2.1)
     logrotate (~> 2.2.0)
