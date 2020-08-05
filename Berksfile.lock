@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: 6031a177c6e8f6864202c95dcec08c966a9a35d6
+    revision: c6ce83f53d25ac4682288e2a82eb46e1113043ba
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
@@ -59,7 +59,7 @@ GRAPH
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
     yum (>= 0.0.0)
-  elasticsearch_wrapper_cookbook (7.5.2)
+  elasticsearch_wrapper_cookbook (7.5.3)
     ark (>= 0.0.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
