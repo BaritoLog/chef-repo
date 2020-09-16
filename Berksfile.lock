@@ -7,7 +7,7 @@ DEPENDENCIES
     revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
-    revision: c41bc02d0465e2595a9fa244ccd4c68d1feb17ed
+    revision: 8802c9fcb43e656166807040b164b37bddb90ee4
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
     revision: aea46fd0a652411e3a1f61daf244c521156dee7b
@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: c6ce83f53d25ac4682288e2a82eb46e1113043ba
+    revision: af43619f9a58933aae9a544476d63cc83c8e25ab
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: 085d41244703b7c0c16ebc84d48fe5ef546aecea
@@ -64,7 +64,7 @@ GRAPH
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
   hostsfile (3.0.1)
-  java (8.3.0)
+  java (8.4.0)
     line (>= 0.0.0)
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
@@ -93,7 +93,7 @@ GRAPH
     windows (>= 0.0.0)
   systemd (3.2.4)
   tar (2.2.0)
-  windows (7.0.0)
+  windows (7.0.2)
   yum (5.1.0)
   zipfile (0.2.0)
   zookeeper (3.4.12)
