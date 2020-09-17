@@ -19,7 +19,7 @@ DEPENDENCIES
     revision: af43619f9a58933aae9a544476d63cc83c8e25ab
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: da9d442517486b9b5c3f5eb945b8dc8a009e92f0
+    revision: d5ae63f09bf979e11745bad6ec4d81aa666048b1
   kibana
     git: https://github.com/BaritoLog/kibana_cookbook.git
     revision: 83c9a557327f82518f6e6560e41bf91dd9ff60b5
