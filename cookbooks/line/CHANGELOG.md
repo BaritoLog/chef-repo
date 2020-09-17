@@ -2,19 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 2.9.1 (2020-09-16)
+
+- resolved cookstyle error: libraries/filter_helper.rb:54:17 convention: `Style/BisectedAttrAccessor`
+- resolved cookstyle error: libraries/filter_helper.rb:56:1 convention: `Layout/EmptyLines`
+- resolved cookstyle error: libraries/filter_helper.rb:56:1 convention: `Layout/TrailingWhitespace`
+- resolved cookstyle error: libraries/filter_helper.rb:56:17 convention: `Style/BisectedAttrAccessor`
+- resolved cookstyle error: libraries/filter_helper.rb:57:1 convention: `Layout/EmptyLines`
+- resolved cookstyle error: libraries/substitute_filter.rb:39:7 convention: `Style/RedundantAssignment`
+- resolved cookstyle error: libraries/substitute_filter.rb:44:1 convention: `Layout/EmptyLinesAroundMethodBody`
+- resolved cookstyle error: libraries/substitute_filter.rb:44:1 convention: `Layout/TrailingWhitespace`
+
+## 2.9.0 (2020-06-18)
+
+- Restore compatibility with Chef Infra Client < 16
+
+## 2.8.1 - 2020-06-02
+
+- resolved cookstyle error: resources/add_to_list.rb:10:1 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
+- resolved cookstyle error: resources/append_if_no_line.rb:7:1 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
+- resolved cookstyle error: resources/delete_from_list.rb:10:1 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
+- resolved cookstyle error: resources/delete_lines.rb:7:1 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
+- resolved cookstyle error: resources/filter_lines.rb:25:1 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
+- resolved cookstyle error: resources/replace_or_add.rb:10:1 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
 
 ## [2.8.0] - 2020-03-06
-
-### Add
 
 - Feature - no duplicates
 - Feature - next replace between
 - Migrate to github actions
-
-### Fixed
-
 - Documentation fixes
 
 ## [2.7.0]
