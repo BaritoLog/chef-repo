@@ -19,7 +19,7 @@ DEPENDENCIES
     revision: af43619f9a58933aae9a544476d63cc83c8e25ab
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
-    revision: d5ae63f09bf979e11745bad6ec4d81aa666048b1
+    revision: d26a80d1a06a3f32ce7bcb9e5fc4145fb75f716f
   kibana
     git: https://github.com/BaritoLog/kibana_cookbook.git
     revision: 83c9a557327f82518f6e6560e41bf91dd9ff60b5
@@ -28,7 +28,7 @@ DEPENDENCIES
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: ac7f4c3e9148c18475720943a5f83d9c5bf30881
+    revision: 6002d7edb529ebb3c36af7b9e4b6f8f95f9aee0c
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
