@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
   elasticsearch_wrapper_cookbook
     git: https://github.com/BaritoLog/elasticsearchwrapper_cookbook.git
-    revision: af43619f9a58933aae9a544476d63cc83c8e25ab
+    revision: fe1724d6a11072845e52487acd68e8c0dcf0902b
   kafka
     git: https://github.com/BaritoLog/kafka-cookbook.git
     revision: d26a80d1a06a3f32ce7bcb9e5fc4145fb75f716f
@@ -28,7 +28,7 @@ DEPENDENCIES
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: 6002d7edb529ebb3c36af7b9e4b6f8f95f9aee0c
+    revision: 04ba707f3ed8ffcc7b61eb3d44fcb01171b3d45d
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
