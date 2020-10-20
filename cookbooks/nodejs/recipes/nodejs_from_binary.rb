@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-Chef::Recipe.include NodeJs::Helper
+Chef::DSL::Recipe.include NodeJs::Helper
 
 # Shamelessly borrowed from http://docs.chef.io/dsl_recipe_method_platform.html
 # Surely there's a more canonical way to get arch?
@@ -47,6 +47,7 @@ archive_name = 'nodejs-binary'
 binaries = ['bin/node']
 
 binaries.push('bin/npm') if node['nodejs']['npm']['install_method'] == 'embedded'
+binaries.push('bin/npx') if node['nodejs']['npm']['install_method'] == 'embedded'
 
 if node['nodejs']['binary']['url']
   nodejs_bin_url = node['nodejs']['binary']['url']
@@ -61,5 +62,6 @@ ark archive_name do
   version node['nodejs']['version']
   checksum checksum
   has_binaries binaries
+  append_env_path node['nodejs']['binary']['append_env_path']
   action :install
 end

@@ -170,3 +170,51 @@ default[cookbook_name]['router']['systemd_unit'] = {
     'WantedBy' => 'multi-user.target'
   }
 }
+
+#
+# Barito Blackbox Exporter
+#
+
+# exporter version
+default[cookbook_name]['exporter']['version'] = 'v0.1.0'
+exporter_version = node[cookbook_name]['exporter']['version']
+
+# where to get the binary
+default[cookbook_name]['exporter']['binary'] = 'barito-blackbox-exporter-linux'
+exporter_binary = node[cookbook_name]['exporter']['binary']
+default[cookbook_name]['exporter']['mirror'] =
+  "https://github.com/BaritoLog/barito_exporter/releases/download/#{exporter_version}/#{exporter_binary}"
+default[cookbook_name]['exporter']['service_name'] = 'barito-blackbox-exporter'
+
+# environment variables
+default[cookbook_name]['exporter']['prefix_env_vars'] = '/etc/default'
+default[cookbook_name]['exporter']['env_vars_file'] = "#{node[cookbook_name]['exporter']['prefix_env_vars']}/#{node[cookbook_name]['exporter']['service_name']}"
+default[cookbook_name]['exporter']['env_vars'] = {}
+
+# exporter daemon options, used to create the ExecStart option in service
+default[cookbook_name]['exporter']['cli_opts'] = ['a']
+
+# log file location
+default[cookbook_name]['exporter']['prefix_log'] = '/var/log/barito-blackbox-exporter'
+default[cookbook_name]['exporter']['log_file_name'] = 'error.log'
+
+# exporter Systemd service unit, include config
+default[cookbook_name]['exporter']['systemd_unit'] = {
+  'Unit' => {
+    'Description' => 'barito blackbox exporter',
+    'After' => 'network.target'
+  },
+  'Service' => {
+    'Type' => 'simple',
+    'User' => node[cookbook_name]['user'],
+    'Group' => node[cookbook_name]['group'],
+    'Restart' => 'always', 
+    'RestartSec' => 30,
+    'StartLimitInterval' => 400,
+    'StartLimitBurst' => 10,
+    'ExecStart' => 'TO_BE_COMPLETED'
+  },
+  'Install' => {
+    'WantedBy' => 'multi-user.target'
+  }
+}

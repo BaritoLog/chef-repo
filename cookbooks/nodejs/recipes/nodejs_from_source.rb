@@ -18,15 +18,15 @@
 # limitations under the License.
 #
 
-Chef::Recipe.include NodeJs::Helper
+Chef::DSL::Recipe.include NodeJs::Helper
 
 build_essential 'install build tools'
 
 case node['platform_family']
 when 'rhel', 'fedora', 'amazon'
-  package %w(openssl-devel tar)
+  package %w(openssl-devel python3 tar)
 when 'debian'
-  package 'libssl-dev'
+  package 'libssl-dev python'
 end
 
 version = "v#{node['nodejs']['version']}/"

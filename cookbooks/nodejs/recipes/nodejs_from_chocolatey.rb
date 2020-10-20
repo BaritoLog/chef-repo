@@ -1,9 +1,7 @@
 #
-# Author:: Marius Ducea (marius@promethost.com)
+# Author:: Hossein Margani (hossein@margani.dev)
 # Cookbook:: nodejs
-# Recipe:: npm
-#
-# Copyright:: 2010-2017, Promet Solutions
+# Recipe:: install_from_chocolatey
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,15 +16,9 @@
 # limitations under the License.
 #
 
-Chef::DSL::Recipe.include NodeJs::Helper
+include_recipe 'chocolatey'
 
-include_recipe 'nodejs::nodejs_from_source'
-
-dist = npm_dist
-
-ark 'npm' do
-  url dist['url']
-  checksum dist['checksum']
-  version dist['version']
-  action :install_with_make
+chocolatey_package 'nodejs-lts' do
+  version node['nodejs']['version'] if node['nodejs']['version']
+  action :upgrade
 end

@@ -22,7 +22,7 @@
   "recipes": {
 
   },
-  "version": "7.5.0",
+  "version": "7.6.0",
   "source_url": "https://github.com/BaritoLog/kibana_cookbook",
   "issues_url": "https://github.com/BaritoLog/kibana_cookbook/issues",
   "privacy": false,
