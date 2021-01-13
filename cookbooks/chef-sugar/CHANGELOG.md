@@ -9,6 +9,23 @@ This file is used to list changes made in each version of the chef-sugar cookboo
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
+## [v5.1.12](https://github.com/chef/chef-sugar/tree/v5.1.12) (2020-11-11)
+
+#### Merged Pull Requests
+- Don&#39;t define which helper on Chef 16+ to avoid conflicts [#21](https://github.com/chef/chef-sugar/pull/21) ([tas50](https://github.com/tas50))
+<!-- latest_stable_release -->
+
+## [v5.1.11](https://github.com/chef/chef-sugar/tree/v5.1.11) (2020-08-14)
+
+#### Merged Pull Requests
+- Fix Ruby 2.3 tests [#19](https://github.com/chef/chef-sugar/pull/19) ([tas50](https://github.com/tas50))
+- Only require libs if we haven&#39;t already loaded them [#20](https://github.com/chef/chef-sugar/pull/20) ([tas50](https://github.com/tas50))
+
+## [v5.1.9](https://github.com/chef/chef-sugar/tree/v5.1.9) (2019-11-13)
+
+#### Merged Pull Requests
+- Don&#39;t fail if Chef::VERSION isn&#39;t defined [#18](https://github.com/chef/chef-sugar/pull/18) ([lamont-granquist](https://github.com/lamont-granquist))
+
 ## [v5.1.8](https://github.com/chef/chef-sugar/tree/v5.1.8) (2019-11-13)
 
 #### Merged Pull Requests
@@ -22,7 +39,6 @@ This file is used to list changes made in each version of the chef-sugar cookboo
 - Move test deps to the Gemfile [#15](https://github.com/chef/chef-sugar/pull/15) ([tas50](https://github.com/tas50))
 - Get the tests green [#17](https://github.com/chef/chef-sugar/pull/17) ([tas50](https://github.com/tas50))
 - Deprecate chef-sugar node API [#16](https://github.com/chef/chef-sugar/pull/16) ([lamont-granquist](https://github.com/lamont-granquist))
-<!-- latest_stable_release -->
 
 ## v5.0.1 (2019-03-13)
 

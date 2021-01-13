@@ -106,7 +106,7 @@ _Warning:_ This recipe will include the `nodejs` recipe, which by default includ
 
 note: This resource was previously named nodejs_npm. Calls to that resource name will still function, but cookbooks should be updated for the new npm_package resource name.
 
-`npm_package` let you install npm packages from various sources:
+`npm_package` lets you install npm packages from various sources:
 
 - npm registry:
 
@@ -130,8 +130,12 @@ You can specify a `NODE_ENV` environment variable, in the case that some element
 
 You can append more specific options to npm command with `attribute :options` array :
 
+You can specify auto_update as false to stop the npm install command from running and updating an installed package. Running the command will update packages within restrictions imposed by a package.json file. The default behavior is to update automatically.
+
 - use an array of options (w/ dash), they will be added to npm call.
 - ex: `['--production','--force']` or `['--force-latest']`
+
+You can specify live_stream true for the resource to have the package install information included in the chef-client log outout for better npm package diagnostics and trouble shooting.
 
 This LWRP attempts to use vanilla npm as much as possible (no custom wrapper).
 
@@ -194,7 +198,10 @@ Or add packages via attributes (which accept the same attributes as the LWRP abo
 
 ## License & Authors
 
-**Author:** Marius Ducea (marius@promethost.com) **Author:** Nathan L Smith (nlloyds@gmail.com) **Author:** Guilhem Lettron (guilhem@lettron.fr) **Author:** Barthelemy Vessemont (bvessemont@gmail.com)
+**Author:** Marius Ducea (marius@promethost.com)
+**Author:** Nathan L Smith (nlloyds@gmail.com)
+**Author:** Guilhem Lettron (guilhem@lettron.fr)
+**Author:** Barthelemy Vessemont (bvessemont@gmail.com)
 
 **Copyright:** Chef Software, Inc.
 

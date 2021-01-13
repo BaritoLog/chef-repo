@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 2.9.3 - *2020-12-07*
+
+- Add a type to the EOL property of the filter_lines resource
+
+## 2.9.2 - *2020-12-06*
+
+- resolved cookstyle error: libraries/filter_helper.rb:59:11 convention: `Style/CommentAnnotation`
+
 ## 2.9.1 (2020-09-16)
 
 - resolved cookstyle error: libraries/filter_helper.rb:54:17 convention: `Style/BisectedAttrAccessor`

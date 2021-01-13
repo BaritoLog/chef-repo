@@ -7,10 +7,10 @@ DEPENDENCIES
     revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
-    revision: 8802c9fcb43e656166807040b164b37bddb90ee4
+    revision: 34117b452423cc1c4f29e8e4111fd5db13a1eb5b
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
-    revision: aea46fd0a652411e3a1f61daf244c521156dee7b
+    revision: 1107ab5a1b71b0711188feb515e3f315db13c031
   datadog
     git: https://github.com/BaritoLog/datadog-cookbook.git
     revision: 82c33f053b3d5578cd40d7ceb7554ee76f346e28
@@ -47,8 +47,8 @@ GRAPH
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-sugar (5.1.8)
-  chef_gate (0.4.7)
+  chef-sugar (5.1.12)
+  chef_gate (0.4.8)
     apt (>= 0.0.0)
   chocolatey (3.0.0)
   consul (1.1.0)
@@ -65,7 +65,7 @@ GRAPH
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
   hostsfile (3.0.1)
-  java (8.4.0)
+  java (8.5.0)
     line (>= 0.0.0)
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
@@ -80,11 +80,11 @@ GRAPH
   kibana_wrapper_cookbook (6.3.1)
     kibana5 (>= 0.0.0)
     systemd (>= 0.0.0)
-  line (2.9.1)
+  line (2.9.3)
   logrotate (2.2.3)
   mingw (2.1.1)
     seven_zip (>= 0.0.0)
-  nodejs (7.2.0)
+  nodejs (7.3.1)
     ark (>= 2.0.2)
     chocolatey (>= 3.0)
   prometheus (0.3.1)

@@ -26,7 +26,7 @@ module NodeJs
         JSON.parse(cmd.run_command.stdout, max_nesting: false)
       rescue JSON::ParserError => e
         Chef::Log.error("nodejs::library::nodejs_helper::npm_list exception #{e}")
-        false
+        {}
       end
     end
 
@@ -38,6 +38,8 @@ module NodeJs
       rescue KeyError
         # the package may have been installed without using a url
         true
+      rescue URI::InvalidURIError
+        false
       end
     end
 
