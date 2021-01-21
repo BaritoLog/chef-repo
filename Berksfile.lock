@@ -28,13 +28,13 @@ DEPENDENCIES
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: 82f52959b8f95f9f2389f607dcbf8bd32e8f1c9d
+    revision: 6107aa0441001d437be3b432bfc6361d0d46a5a2
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
 
 GRAPH
-  apt (7.3.0)
+  apt (7.4.0)
   ark (3.1.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
@@ -87,7 +87,7 @@ GRAPH
   nodejs (7.3.1)
     ark (>= 2.0.2)
     chocolatey (>= 3.0)
-  prometheus (0.3.1)
+  prometheus (0.4.0)
     ark (~> 3.1)
     cron (~> 6.2.1)
     logrotate (~> 2.2.0)
@@ -96,7 +96,7 @@ GRAPH
   systemd (3.2.4)
   tar (2.2.0)
   windows (7.0.2)
-  yum (5.1.0)
+  yum (6.0.0)
   zipfile (0.2.0)
   zookeeper (3.4.12)
     ark (>= 0.0.0)
