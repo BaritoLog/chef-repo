@@ -2,6 +2,12 @@
 
 This file is used to list changes made in each version of the Java cookbook.
 
+## 8.6.0 - *2021-01-22*
+
+- Added Amazon Corretto 15 support to `corretto_install`
+- Added configurable `file_cache_path` property to `java_certificate`
+- Added `cacerts` property to `java_certificate` for interacting with java cacerts file (Java 9+)
+
 ## 8.5.0 - *2020-12-03*
 
 - resolved cookstyle error: spec/spec_helper.rb:4:18 convention: `Style/RedundantFileExtensionInRequire`
