@@ -28,7 +28,7 @@ DEPENDENCIES
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
   prometheus
     git: https://github.com/BaritoLog/prometheus-cookbook.git
-    revision: cdd48291568e7ce0eeaadd6e2d5c0ce347abfdd0
+    revision: 4aabfde2ba16e50cc45eb7446102d8a4e777718f
   zookeeper
     git: https://github.com/BaritoLog/zookeeper-cookbook.git
     revision: 06f31616103fff0203aa3ab87e15861bb1ddd4e7
@@ -87,7 +87,7 @@ GRAPH
   nodejs (7.3.1)
     ark (>= 2.0.2)
     chocolatey (>= 3.0)
-  prometheus (0.4.3)
+  prometheus (0.4.4)
     ark (~> 3.1)
     cron (~> 6.2.1)
     logrotate (~> 2.2.0)
