@@ -7,7 +7,7 @@ DEPENDENCIES
     revision: cd5d509fd97887170e91e5f78e3bc8d5147f5e61
   chef_gate
     git: https://github.com/gate-sso/chef_gate.git
-    revision: 34117b452423cc1c4f29e8e4111fd5db13a1eb5b
+    revision: cf9ecde9b179cbeb3641c196ebc8a0f66e4103ed
   consul
     git: https://github.com/BaritoLog/consul-cookbook.git
     revision: 1107ab5a1b71b0711188feb515e3f315db13c031
@@ -22,7 +22,7 @@ DEPENDENCIES
     revision: d26a80d1a06a3f32ce7bcb9e5fc4145fb75f716f
   kibana
     git: https://github.com/BaritoLog/kibana_cookbook.git
-    revision: 3349d4bc4a8b961129b22dee9ce62df11a1f78b1
+    revision: f007193b1854510f323550d0a4636d63874eba73
   kibana_wrapper_cookbook
     git: https://github.com/BaritoLog/kibana_wrapper_cookbook.git
     revision: 2248e31ae1ab9afb3b08b5148ec3e7021ebb0ade
@@ -48,7 +48,7 @@ GRAPH
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   chef-sugar (5.1.12)
-  chef_gate (0.4.8)
+  chef_gate (0.4.9)
     apt (>= 0.0.0)
   chocolatey (3.0.0)
   consul (1.1.0)
@@ -70,7 +70,7 @@ GRAPH
   kafka (2.11.0)
     hostsfile (>= 0.0.0)
     zookeeper (>= 0.0.0)
-  kibana (7.6.0)
+  kibana (7.6.1)
     ark (>= 0.0.0)
     nodejs (>= 0.0.0)
     systemd (>= 0.0.0)
@@ -96,7 +96,7 @@ GRAPH
   systemd (3.2.4)
   tar (2.2.0)
   windows (7.0.2)
-  yum (6.0.0)
+  yum (6.1.0)
   zipfile (0.2.0)
   zookeeper (3.4.12)
     ark (>= 0.0.0)
